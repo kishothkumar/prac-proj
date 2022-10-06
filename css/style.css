@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,500&family=Oxygen&display=swap');
+
+:root{
+    --yellow: #FDFF00;
+    --red: #FF1E1E;
+    --white: #fff;
+    --black: #181818;
+    --lightcolor: #4C6793;
+    --border: .2rem solid var(--black);
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--yellow);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    stop-opacity: 7rem;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.header{
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    border-bottom: var(--border);
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .flex .navbar a{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .flex .navbar a:hover{
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+.header .flex .icons > *{
+    margin-left: 1.5rem;
+    color: var(--black);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.header .flex .icons > *:hover{
+    color: var(--yellow);
+}
